@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메인 시안 1</title>
+
+    <link rel="stylesheet" href="/re_style.css" />
+    <script src="/gsap.js"></script>
+
+    <!-- gsap -->
+    <script src="/script/gsap.min.js"></script>
+    <script src="/script/scrolltrigger.min.js"></script>
+    <script src="/script/scrolltoplugin.min.js"></script>
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- lenis-->
+    <script src="https://unpkg.com/lenis@1.3.14/dist/lenis.min.js"></script>
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- 폰트 -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"
+    />
+  </head>
+
+  <body>
+    <!--<div class="header">
+      <div class="header-inner">
+        <a class="logo"><img src="/image/logo.png" alt="" /></a>
+        <div class="gap"></div>
+        <div class="nav">
+          <ul>
+            <li>가족간병</li>
+            <li>동행</li>
+            <li>고객지원</li>
+          </ul>
+        </div>
+        <a href="" class="mypage"> 마이페이지 </a>
+      </div>
+    </div>-->
+    <div class="main_view">
+      <!-- 고정 퀵 -->
+      <div class="main-fixed-quick">
+        <a href="">
+          <img src="/image/quick-obj.png" alt="" />
+          <div class="rotate-obj">
+            <img src="/image/quick-ratate.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <!-- 고정 계좌정보 -->
+      <div class="fixed-bank">
+        <!--<div class="subj">입금안내</div>-->
+        <div class="num">신한은행 <b>110-123-456789</b> (주)마더365</div>
+      </div>
+
+      <div class="main-top-bg">
+        <img src="/image/main-here-bg.png" alt="" />
+      </div>
+      <div class="main-hero">
+        <div class="swiper hero-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="hero-txt">
+                <h2>
+                  <b>365일 언제나!</b>
+                  내 가족을 위한 가장 든든한 돌봄 파트너
+                </h2>
+                <p>
+                  <b>가족간병 보험</b>이 있다면, <b>가족</b>을 <b>간병인</b>으로
+                  간편하게 신청하세요 <br />복잡한
+                  <b>보험사 청구 서류!</b> 마더365가 든든하게 지원합니다!
+                </p>
+                <a href="">간편하게 간병인 신청!</a>
+              </div>
+              <div class="obj-wrap">
+                <div class="obj obj-1 obj-fade">
+                  <img src="/image/main_hero_img1-1.png" alt="" />
+                </div>
+                <div class="obj obj-2 obj-fade">
+                  <img src="/image/main_hero_img2-1.png" alt="" />
+                </div>
+                <div class="obj obj-3 obj-fade">
+                  <img src="/image/main_hero_img3.png" alt="" />
+                </div>
+                <div class="obj obj-4 obj-fade">
+                  <img src="/image/main_hero_img3.png" alt="" />
+                </div>
+                <div class="obj obj-5 obj-fade">
+                  <img src="/image/main_hero_img3.png" alt="" />
+                </div>
+                <div class="obj obj-6 obj-fade">
+                  <img src="/image/main_hero_img3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero-txt">
+                <h2>
+                  <b>365일 언제나!</b>
+                  당신의 든든한 발걸음 동행 파트너
+                </h2>
+                <p>
+                  단순한 이동 보조를 넘어 <b>진심 어린 말벗</b>과
+                  <b>보살핌</b>으로, <br /><b>1:1 맞춤 안심 동행!</b> 마더365가
+                  함께 걷겠습니다.
+                </p>
+                <a href="">간편하게 동행 신청!</a>
+              </div>
+              <div class="obj-wrap">
+                <div class="obj obj-1 obj-fade">
+                  <img src="/image/main_hero_img5.png" alt="" />
+                </div>
+                <div class="obj obj-2 obj-fade">
+                  <img src="/image/main_hero_img4.png" alt="" />
+                </div>
+                <div class="obj obj-3 obj-fade">
+                  <img src="/image/main_hero_img3.png" alt="" />
+                </div>
+                <div class="obj obj-4 obj-fade">
+                  <img src="/image/main_hero_img3.png" alt="" />
+                </div>
+                <div class="obj obj-5 obj-fade">
+                  <img src="/image/main_hero_img3.png" alt="" />
+                </div>
+                <div class="obj obj-6 obj-fade">
+                  <img src="/image/main_hero_img3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero-txt">
+                <h2>
+                  <b>사람을 사랑으로,</b>
+                  진정한 존중과 깊은 공감
+                </h2>
+                <p>
+                  더 나은 <b>돌봄 문화</b>를 선도하는 <b>내 가족 지킴</b>이
+                  <b>마더365</b>
+                </p>
+                <a href="">전문 상담 신청하기!</a>
+              </div>
+              <div class="obj-wrap">
+                <div class="obj obj-1 obj-fade">
+                  <img src="/image/main_hero_img7.png" alt="" />
+                </div>
+                <div class="obj obj-2 obj-fade">
+                  <img src="/image/main_hero_img6.png" alt="" />
+                </div>
+                <div class="obj obj-3 obj-fade">
+                  <img src="/image/main_hero_img3.png" alt="" />
+                </div>
+                <div class="obj obj-4 obj-fade">
+                  <img src="/image/main_hero_img3.png" alt="" />
+                </div>
+                <div class="obj obj-5 obj-fade">
+                  <img src="/image/main_hero_img3.png" alt="" />
+                </div>
+                <div class="obj obj-6 obj-fade">
+                  <img src="/image/main_hero_img3.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-swiper-pagination"></div>
+        <div class="h-swiper-button-next"><div class="arrow-right"></div></div>
+        <div class="h-swiper-button-prev"><div class="arrow-left"></div></div>
+        <!-- 고정 배경 텍스트 -->
+        <div class="hero-bg-txt">MOTHER365</div>
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-down-indicator">
+          <div class="arrow arrow-first"></div>
+          <div class="arrow arrow-second"></div>
+        </div>
+      </div>
+      <div class="main-contact">
+        <div class="main-container">
+          <ul class="contact-wrap">
+            <li
+              class="family"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-delay="200"
+            >
+              <div class="icon">
+                <img src="/image/main-top-contact-img2.png" alt="" />
+              </div>
+              <h3>가족간병</h3>
+              <p>
+                환자가 보험사 간병보험에<br />
+                가입되어있을 경우, 이용 가능합니다.
+              </p>
+              <a href="">가족간병 신청하기 <span class="arrow"></span></a>
+            </li>
+            <li class="call" data-aos="fade-up" data-aos-duration="1200">
+              <div class="obj">
+                <img src="/image/main_top_contact_img1.png" alt="" />
+              </div>
+              <div class="tag">상담문의</div>
+              <p><b>전문</b>상담전화</p>
+              <div class="num">1670-3658</div>
+              <div class="time">
+                <div class="week">평일 <b>10:00-17:30</b></div>
+                <div class="rest">주말·공휴일 휴무</div>
+              </div>
+            </li>
+            <li
+              class="support"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-delay="400"
+            >
+              <div class="icon">
+                <img src="/image/main-top-contact-img3.png" alt="" />
+              </div>
+              <h3>동행</h3>
+              <p>
+                목적지 출발부터 귀가까지 책임지며 <br />가족의 부재를
+                실시간으로<br />
+                해결해드리겠습니다.
+              </p>
+              <a href="">동행 신청하기 <span class="arrow"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-family">
+        <div class="main-container">
+          <div class="title-wrap">
+            <em data-aos="fade-up" data-aos-duration="1200">FAMILY CARE</em>
+            <h2
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-delay="200"
+            >
+              마더365 가족간병
+            </h2>
+            <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+              마더365는 가족간병 시 필요한 <b>간병보험 청구 지원</b>부터<br />
+              <b>보험청구</b>까지 가족간병의 <b>전 과정을 통합 지원</b>하는
+              서비스 플랫폼입니다.
+            </p>
+          </div>
+          <ul>
+            <li
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              data-aos-delay=""
+            >
+              <div class="step">01</div>
+              <div class="txt-wrap">
+                <b>가족간병 보험금</b>을 <b>받으려면</b><br />
+                어떻게 해야 하나요?
+              </div>
+              <img
+                src="/image/main_familycare_img1.png"
+                alt=""
+                class="box-obj"
+              />
+            </li>
+            <li
+              data-aos="fade-left"
+              data-aos-duration="1200"
+              data-aos-delay="200"
+            >
+              <div class="step">02</div>
+              <div class="txt-wrap">
+                <b>가족간병 보험 특약</b>이 있는지<br />
+                <b>어떻게</b> <b>확인</b> 하나요?
+              </div>
+              <img
+                src="/image/main_familycare_img2.png"
+                alt=""
+                class="box-obj"
+              />
+            </li>
+            <li
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              data-aos-delay="400"
+            >
+              <div class="step">03</div>
+              <div class="txt-wrap">
+                <b>가족 간병인 등록</b>시<br />
+                <b>어떤 정보</b>가 필요한가요?
+              </div>
+              <img
+                src="/image/main_familycare_img3.png"
+                alt=""
+                class="box-obj"
+              />
+            </li>
+            <li
+              data-aos="fade-left"
+              data-aos-duration="1200"
+              data-aos-delay="600"
+            >
+              <div class="step">04</div>
+              <div class="txt-wrap">
+                <b>마더365</b>를 통해 <b>발급</b>받을 수 있는 <br />
+                <b>서류</b>는 무엇인가요?
+              </div>
+              <img
+                src="/image/main_familycare_img4.png"
+                alt=""
+                class="box-obj"
+              />
+            </li>
+          </ul>
+          <a
+            href=""
+            class="family-btn"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            >마더365 가족 간병 안내 <span class="arrow"></span
+          ></a>
+        </div>
+        <img src="/image/main-family-blur-bg.png" alt="" class="blur-bg" />
+      </div>
+      <div class="main-marquee">
+        <!-- 마퀴 효과가 끊김 없이 연속되도록 동일 세트를 2번 중복 배치한 구조입니다 -->
+
+        <div class="mq-wrap">
+          <div class="track">
+            <!-- 1번 세트 -->
+            <div class="item">MOTHER <span>365</span></div>
+            <div class="item">
+              <img src="/image/main-marquee-img1.png" alt="" />
+            </div>
+            <div class="item">FAMILY <span>CARE</span></div>
+            <div class="item">
+              <img src="/image/main-marquee-img2.png" alt="" />
+            </div>
+            <div class="item">MOTHER <span>365</span></div>
+            <div class="item">
+              <img src="/image/main-marquee-img1.png" alt="" />
+            </div>
+            <div class="item">FAMILY <span>CARE</span></div>
+            <div class="item">
+              <img src="/image/main-marquee-img2.png" alt="" />
+            </div>
+
+            <!-- 2번 세트 (무한 루프 잇기용 동일 복사본) -->
+            <div class="item">MOTHER <span>365</span></div>
+            <div class="item">
+              <img src="/image/main-marquee-img1.png" alt="" />
+            </div>
+            <div class="item">FAMILY <span>CARE</span></div>
+            <div class="item">
+              <img src="/image/main-marquee-img2.png" alt="" />
+            </div>
+            <div class="item">MOTHER <span>365</span></div>
+            <div class="item">
+              <img src="/image/main-marquee-img1.png" alt="" />
+            </div>
+            <div class="item">FAMILY <span>CARE</span></div>
+            <div class="item">
+              <img src="/image/main-marquee-img2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-companion">
+        <div class="main-container">
+          <div class="title-wrap">
+            <em data-aos="fade-up" data-aos-duration="1200" data-aos-delay=""
+              >COMPANION</em
+            >
+            <h2
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-delay="200"
+            >
+              마더365 동행지원
+            </h2>
+            <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+              마더365의 검증된 <b>동행매니저</b>가
+              <b>목적지 출발부터 귀가</b>까지 책임지며<br />
+              가족의 <b>부재를 실시간으로 해결</b>해 드리겠습니다.
+            </p>
+          </div>
+
+          <div class="content-wrap">
+            <div class="figure" data-aos="fade-right" data-aos-duration="1200">
+              <div class="f-item active">
+                <img src="/image/main-support-img-1.jpg" alt="" />
+              </div>
+              <div class="f-item">
+                <img src="/image/main-support-img-2.jpg" alt="" />
+              </div>
+              <div class="f-item">
+                <img src="/image/main-support-img-3.jpg" alt="" />
+              </div>
+              <div class="f-item">
+                <img src="/image/main-support-img-4.jpg" alt="" />
+              </div>
+            </div>
+
+            <div
+              class="caption"
+              data-aos="fade-left"
+              data-aos-duration="1200"
+              data-aos-delay="200"
+            >
+              <div class="item active">
+                <span>01</span>
+                <div>
+                  <b>부모님 병원</b> 가시는 날, <b>또 휴가</b> 내기 눈치
+                  보이시나요?
+                </div>
+              </div>
+
+              <div class="item">
+                <span>02</span>
+                <div>
+                  <b>복잡한</b> 대학병원 <b>무인 수납기</b> 앞에서,
+                  <b>혼자서</b> 얼마나 서 계셨을까요?
+                </div>
+              </div>
+
+              <div class="item">
+                <span>03</span>
+                <div>
+                  오늘 <b>부모님 진료</b>, 의사 선생님 <b>말씀을 다 이해</b>하고
+                  오셨을까요?
+                </div>
+              </div>
+
+              <div class="item">
+                <span>04</span>
+                <div>병원에 <b>단순히 모셔다드리기만</b> 할까요?</div>
+              </div>
+            </div>
+          </div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const section = document.querySelector(".main-companion");
+              if (!section) return;
+
+              const figure = section.querySelector(".figure");
+              const caption = section.querySelector(".caption");
+
+              const figures = figure?.querySelectorAll(".f-item");
+              const items = caption?.querySelectorAll(".item");
+
+              if (!figures?.length || !items?.length) return;
+
+              if (figures.length !== items.length) {
+                console.warn("이미지와 문구 개수가 일치하지 않습니다.");
+                return;
+              }
+
+              const INTERVAL = 3200;
+
+              let currentIndex = 0;
+              let timer = null;
+              let isVisible = false;
+
+              // 이미지와 문구 동시 활성화
+              function activate(index) {
+                currentIndex = index;
+
+                figures.forEach((el, i) => {
+                  el.classList.toggle("active", i === index);
+                });
+
+                items.forEach((el, i) => {
+                  const active = i === index;
+
+                  el.classList.toggle("active", active);
+                  el.setAttribute("aria-pressed", String(active));
+                });
+              }
+
+              // 자동 전환 시작
+              function startTimer() {
+                clearInterval(timer);
+
+                if (!isVisible) return;
+
+                timer = setInterval(() => {
+                  activate((currentIndex + 1) % items.length);
+                }, INTERVAL);
+              }
+
+              // 문구 클릭 시 즉시 전환
+              items.forEach((item, index) => {
+                item.setAttribute("role", "button");
+                item.setAttribute("tabindex", "0");
+
+                item.addEventListener("click", () => {
+                  activate(index);
+                  startTimer();
+                });
+
+                item.addEventListener("keydown", (event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    activate(index);
+                    startTimer();
+                  }
+                });
+              });
+
+              // 화면 진입 여부 감지
+              const observer = new IntersectionObserver(
+                (entries) => {
+                  entries.forEach((entry) => {
+                    isVisible = entry.isIntersecting;
+
+                    if (isVisible) {
+                      startTimer();
+                    } else {
+                      clearInterval(timer);
+                      timer = null;
+                    }
+                  });
+                },
+                {
+                  threshold: 0.2,
+                },
+              );
+
+              activate(0);
+              observer.observe(section);
+            });
+          </script>
+
+          <a
+            href=""
+            class="support-btn"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            >마더365 동행 안내 <span class="arrow"></span
+          ></a>
+        </div>
+        <div class="blur-bg">
+          <img src="/image/main-family-blur-bg.png" alt="" />
+        </div>
+      </div>
+      <div class="main-widebn">
+        <div class="swiper wide-bn-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ss1">
+              <div class="caption">
+                <h3>
+                  누구보다 <b>따뜻</b>하고 <b>믿을 수</b> 있는 ‘<b>엄마의 품</b
+                  >’ 같은 <b>돌봄</b>을<br />
+                  <b>365일</b> 전하고자 하는 <b>마음</b>에서
+                  <b>시작</b>되었습니다.
+                </h3>
+                <p>
+                  고객 한 사람 한 사람 삶에 스밀 수 있는 따스함을 전하고자
+                  합니다.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide ss2">
+              <div class="caption">
+                <h3>2번 슬라이드</h3>
+                <p>
+                  고객 한 사람 한 사람 삶에 스밀 수 있는 따스함을 전하고자
+                  합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-swiper-button-next"><div class="arrow"></div></div>
+          <div class="w-swiper-button-prev"><div class="arrow"></div></div>
+        </div>
+        <script>
+          var swiper = new Swiper(".wide-bn-swiper", {
+            speed: 1200,
+            navigation: {
+              nextEl: ".w-swiper-button-next",
+              prevEl: ".w-swiper-button-prev",
+            },
+          });
+        </script>
+      </div>
+
+      <div class="main-partner">
+        <div class="main-container">
+          <div class="title-wrap">
+            <em data-aos="fade-up" data-aos-duration="1200">PARTNERSHIP</em>
+            <h2
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-delay="200"
+            >
+              다양한 파트너와 함께<br />
+              더 나은 케어 서비스를 만들어갑니다
+            </h2>
+          </div>
+        </div>
+        <div
+          class="mq-wrap"
+          data-aos="fade-down"
+          data-aos-duration="1200"
+          data-aos-delay="200"
+        >
+          <!-- 오른쪽으로 흐르는 트랙 (아이템이 적어도 JS가 자동 채움) -->
+          <div class="track track-right">
+            <div class="item">
+              <img src="/image/main_partner_img-1.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="/image/main_partner_img-2.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="/image/main_partner_img-3.jpg" alt="" />
+            </div>
+          </div>
+
+          <!-- 왼쪽으로 흐르는 트랙 -->
+          <div class="track track-left">
+            <div class="item">
+              <img src="/image/main_partner_img-4.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="/image/main_partner_img-5.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="/image/main_partner_img-6.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="hide-area ha1"></div>
+          <div class="hide-area ha2"></div>
+        </div>
+        <div class="logo-bg">
+          <img src="/image/main-support-bg.png" alt="" />
+        </div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            function initInfiniteMarquee() {
+              const wraps = document.querySelectorAll(".mq-wrap");
+
+              wraps.forEach((wrap) => {
+                const tracks = wrap.querySelectorAll(".track");
+
+                tracks.forEach((track) => {
+                  // 중복 실행 방지용 (이미 복제된 트랙이면 패스)
+                  if (track.classList.contains("is-cloned")) return;
+
+                  // original-items로 기본 아이템 보존
+                  const items = Array.from(track.children);
+                  if (items.length === 0) return;
+
+                  // 원래 1세트 아이템들의 총 가로 너비 계산
+                  let singleSetWidth = 0;
+                  items.forEach((item) => {
+                    singleSetWidth += item.offsetWidth;
+                  });
+
+                  // gap 값 가져오기
+                  const gap =
+                    parseFloat(window.getComputedStyle(track).gap) || 0;
+                  singleSetWidth += gap * items.length;
+
+                  // 화면 너비(또는 wrap 너비)의 최소 2.5배 이상이 되도록 복제 횟수 계산
+                  const targetWidth = window.innerWidth * 2.5;
+                  let currentWidth = singleSetWidth;
+
+                  // 기본 1세트 원본을 감싼 오리지널 세트 복사
+                  while (currentWidth < targetWidth) {
+                    items.forEach((item) => {
+                      const clone = item.cloneNode(true);
+                      track.appendChild(clone);
+                    });
+                    currentWidth += singleSetWidth;
+                  }
+
+                  // Seamless(무한 연결) 루프를 위해 전체 채워진 세트를 1번 더 통째로 복제
+                  const filledItems = Array.from(track.children);
+                  filledItems.forEach((item) => {
+                    const clone = item.cloneNode(true);
+                    track.appendChild(clone);
+                  });
+
+                  // 애니메이션 -50% 이동 기준을 잡기 위한 처리
+                  track.classList.add("is-cloned");
+                });
+              });
+            }
+
+            // 초기 실행
+            initInfiniteMarquee();
+
+            // 창 크기 변경 시 대응 (선택 사항)
+            let resizeTimer;
+            window.addEventListener("resize", () => {
+              clearTimeout(resizeTimer);
+              resizeTimer = setTimeout(() => {
+                // 필요 시 재계산 로직 추가 가능
+              }, 200);
+            });
+          });
+        </script>
+      </div>
+
+      <div class="main-form" data-aos="fade" data-aos-duration="1500">
+        <img src="/image/main-section5-img4.png" alt="" class="center-obj" />
+        <img src="/image/main-bottom-bg.webp" class="bottom-obj" alt="" />
+        <div class="bottom-box">
+          <div class="main-container">
+            <h3>돌봄이 필요한 순간 <br />마더365에 편하게 문의해주세요</h3>
+            <div class="form-box">
+              <div class="input-wrap input1">
+                <input type="text" class="" placeholder="이름을 입력해주세요" />
+              </div>
+              <div class="input-wrap input2">
+                <input
+                  type="text"
+                  class=""
+                  placeholder="전화번호를 입력해주세요"
+                />
+              </div>
+
+              <button type="submit">
+                <img src="/image/main-section5-img1.png" alt="" />
+                <span>상담신청</span>
+              </button>
+            </div>
+            <div class="privacy-wrap">
+              <input type="checkbox" name="" id="" />
+              <a href="">개인정보 수집 및 이용에 동의합니다. (필수)</a>
+            </div>
+            <div class="bank-info">
+              입금 안내 <b>신한은행 <span>110-123-456789</span> (주)마더365</b>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-half-bn">
+        <ul>
+          <li>
+            <a href="" class="box1">
+              <div class="caption">
+                <div class="left">
+                  <div class="subj">온라인 병원·생활 동행 문의</div>
+                  <p>
+                    원하시는 날짜와 목적지를 입력하시면 전문 동행 매니저를
+                    매칭해 드립니다.
+                  </p>
+                </div>
+                <div class="right">동행 서비스 안내</div>
+              </div>
+              <img src="/image/main-half-bn-1.jpg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="" class="box2">
+              <div class="caption">
+                <div class="left">
+                  <div class="subj">마더365 친절 상담 센터</div>
+                  <p>
+                    가족간병 정부지원금 및 동행 서비스 이용 절차를 상세히 안내해
+                    드립니다.
+                  </p>
+                </div>
+                <div class="right">+ 1670-3658</div>
+              </div>
+              <img src="/image/main-half-bn-2.jpg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+</html>

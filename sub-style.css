@@ -1,0 +1,745 @@
+:root {
+  --max-width: 1200px;
+  --prm-color: #e3743b;
+  --scd-color: #2579e7;
+  --pt-color: #383838;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  word-break: keep-all;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.sub-view {
+  overflow: hidden;
+  position: relative;
+  padding-top: 3rem;
+}
+
+.sub-view label {
+  margin: 0;
+}
+
+.sub-view .sub-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 0 0;
+}
+
+.sub-view .support-sec1 .tit-wrap em {
+  font-family: "pretendard";
+  font-style: normal;
+  color: #9b9b9b;
+  font-weight: 800;
+}
+
+.sub-view .support-sec1 .tit-wrap h2 {
+  font-family: "pretendard";
+  font-size: 45px;
+  letter-spacing: -0.03em;
+  padding: 1.5rem 0;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.sub-view .support-sec1 .tit-wrap p {
+  font-family: "pretendard";
+  color: #414141;
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  line-height: 1.5;
+}
+
+.sub-view .support-sec2 {
+  padding: 3rem 0;
+}
+
+.sub-view .support-sec2 ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Joħloq 2 kolonni ugwali */
+  gap: 20px; /* Spazju bejn l-oġġetti */
+}
+
+.sub-view .support-sec2 ul li {
+  border-radius: 40px;
+  font-family: "pretendard";
+}
+
+.sub-view .support-sec2 ul .git-1 {
+  grid-column: 1 / -1;
+  background: linear-gradient(353deg, #f6f6f4, #ebebeb);
+  padding: 2.5rem;
+  border: 1px solid #f3eeee;
+}
+
+.sub-view .support-sec2 ul .git-1 .flex {
+  display: flex;
+  align-items: center;
+}
+
+.sub-view .support-sec2 ul .git-1 .f-item {
+  width: 65%;
+}
+
+.sub-view .support-sec2 ul .git-1 .f-item:nth-of-type(1) {
+  width: 30%;
+}
+
+.sub-view .support-sec2 ul .git-1 .f-item > div {
+  padding: 1.5rem 0;
+}
+
+.sub-view .support-sec2 ul .git-1 .img-wrap img {
+  display: block;
+  margin: 0 auto;
+  width: 43%;
+  animation: swoosh-float 3.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+}
+
+.sub-view .support-sec2 ul .git-1 .cap-wrap {
+  font-size: 18px;
+  color: #373735;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.sub-view .support-sec2 ul .git-1 .f-item:nth-of-type(2) {
+  width: 70%;
+}
+
+.sub-view .support-sec2 ul .git-1 .big-txt {
+  font-size: 32px;
+  color: #2a2a26;
+  letter-spacing: -0.03em;
+  font-weight: bold;
+}
+
+.sub-view .support-sec2 ul .git-1 .form-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.sub-view .support-sec2 ul .git-1 .form-wrap .form-item:nth-of-type(1) {
+  width: 30%;
+}
+
+.sub-view .support-sec2 ul .git-1 .form-wrap .form-item:nth-of-type(2) {
+  width: 40%;
+}
+
+.sub-view .support-sec2 ul .git-1 .form-wrap .form-item:nth-of-type(3) {
+  width: 20%;
+}
+
+.sub-view .support-sec2 ul .git-1 .form-wrap span {
+  display: block;
+  font-weight: bold;
+  color: var(--prm-color);
+  padding-bottom: 0.7rem;
+  font-size: 18px;
+}
+
+.sub-view .support-sec2 ul .git-1 .form-wrap span em {
+  font-style: normal;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.sub-view .support-sec2 ul .git-1 .form-wrap input {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  font-size: 15px;
+  padding: 0.7rem;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.sub-view .support-sec2 ul .git-1 .form-wrap button {
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--prm-color);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 80px;
+}
+
+.sub-view .support-sec2 ul .git-1 .form-wrap button:hover {
+  background: #ad3b00;
+  transition: 0.3s;
+}
+
+.sub-view .support-sec2 ul .git-1 .form-wrap .privacy-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sub-view .support-sec2 ul .git-1 .form-wrap .privacy-wrap a {
+  color: #6b5c5c;
+  font-size: 14px;
+}
+
+.sub-view .support-sec2 ul .git-1 .form-wrap .privacy-wrap input {
+  width: auto;
+}
+
+/* git-2 u git-3 awtomatiċi se joqogħdu fit-tieni ringiela f'kull kolonna */
+.sub-view .support-sec2 ul .git-2 {
+  grid-column: 1;
+  background: linear-gradient(315deg, #ffa070, var(--prm-color), #c3551d);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 4rem;
+  color: #fff;
+  position: relative;
+  min-height: 430px;
+}
+
+.sub-view .support-sec2 ul .git-2 .gap {
+  flex: 1;
+}
+
+.sub-view .support-sec2 ul .git-2 .tw-1 p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.sub-view .support-sec2 ul .git-2 .tw-1 h3 {
+  font-size: 60px;
+  font-weight: 900;
+  padding-top: 1rem;
+  text-shadow: 0 12px 15px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.sub-view .support-sec2 ul .git-2 .tw-2 .time {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 0.4rem;
+}
+
+.sub-view .support-sec2 ul .git-2 .tw-2 .time em {
+  font-style: normal;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.sub-view .support-sec2 ul .git-2 .tw-2 .day {
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.sub-view .support-sec2 ul .git-2 .obj {
+  position: absolute;
+  opacity: 0.3;
+  bottom: 8%;
+  right: 8%;
+}
+
+.sub-view .support-sec2 ul .git-2 .obj img {
+  display: block;
+}
+
+.sub-view .support-sec2 ul .git-3 {
+  grid-column: 2;
+  background: #e9c94b;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  justify-content: space-between;
+  position: relative;
+}
+
+.sub-view .support-sec2 ul .git-3 .tw-1 h3 {
+  font-size: 38px;
+  font-weight: 900;
+  color: #371c1e;
+  line-height: 1.3;
+}
+
+.sub-view .support-sec2 ul .git-2 .tw-1 h3 br {
+  display: none;
+}
+
+.sub-view .support-sec2 ul .git-3 > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #fff;
+  border-radius: 100px;
+  padding: 0.7rem 1.7rem;
+  width: 45%;
+  color: #371c1e;
+  font-weight: 900;
+  font-size: 20px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sub-view .support-sec2 ul .git-3 .tw-2 .time {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 0.4rem;
+  color: #371c1e;
+}
+
+.sub-view .support-sec2 ul .git-3 .tw-2 .time em {
+  font-style: normal;
+  font-size: 18px;
+  padding-right: 10px;
+  color: #371c1e;
+}
+
+.sub-view .support-sec2 ul .git-3 .tw-2 .day {
+  font-weight: bold;
+  opacity: 0.7;
+  color: #371c1e;
+}
+
+.sub-view .support-sec2 ul .git-3 .obj {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+}
+
+.sub-view .support-sec2 ul .git-3 .obj img {
+  display: block;
+}
+
+/* 쓔웅.. 쓔웅.. 스무스 부유 키프레임 */
+@keyframes swoosh-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    /* 천천히 상단으로 6px 끌려 올라갔다 내려옴 */
+    transform: translateY(-6px);
+  }
+}
+
+.pc-none {
+  display: none;
+}
+
+/************* 팝업레이어 (모션 추가) *************/
+.popup-layer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+
+  /* 기본 상태: 숨김 & 투명 */
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.popup-layer .popup-body {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  width: 50%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 3rem;
+
+  /* 기본 상태: 살짝 아래에서 작게 시작 */
+  transform: translateY(20px) scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.popup-layer .popup-body .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-family: "Pretendard", sans-serif;
+  font-weight: bold;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  padding: 0.3rem 0.8rem;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+/* 활성화 상태 */
+.popup-layer.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-layer.is-open .popup-body {
+  transform: translateY(0) scale(1);
+}
+
+/* 스크롤 방지 */
+body.scroll-lock {
+  overflow: hidden;
+}
+
+/*************팝업레이어 end *************/
+
+@media (max-width: 1200px) {
+  .sub-view section {
+    padding: 0;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .flex {
+    gap: 20px;
+  }
+  .sub-view .support-sec2 ul .git-1 .f-item {
+    width: 100%;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .f-item > div {
+    padding: 1.2rem 0;
+  }
+  .sub-view .support-sec2 ul .git-1 .form-wrap .form-item:nth-of-type(3) {
+    width: 18%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sub-view .sub-container {
+    padding-top: 4rem;
+  }
+  .sub-view .support-sec1 .tit-wrap h2 {
+    padding: 1rem 0 2rem;
+  }
+
+  .sub-view .support-sec1 .tit-wrap h2 {
+    font-size: 30px;
+  }
+  .sub-view .support-sec1 .tit-wrap p {
+    font-size: 18px;
+  }
+
+  .sub-view .support-sec2 ul .git-1 {
+    padding: 1.5rem;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .big-txt {
+    font-size: 28px;
+  }
+  .sub-view .support-sec2 ul .git-1 .form-wrap button {
+    font-size: 14px;
+    padding: 0.7rem;
+  }
+
+  .sub-view .support-sec2 ul .git-2 .tw-1 h3 {
+    font-size: 50px;
+  }
+
+  .sub-view .support-sec2 ul .git-2 {
+    min-height: 390px;
+    padding: 3rem;
+  }
+
+  .sub-view .support-sec2 ul .git-3 {
+    padding: 3rem;
+  }
+
+  .sub-view .support-sec2 ul .git-3 .tw-1 h3 {
+    font-size: 34px;
+  }
+
+  .sub-view .support-sec2 ul .git-3 .obj {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+  }
+
+  .sub-view .support-sec2 ul .git-3 > a {
+    width: 180px;
+  }
+
+  /**********팝업레이어***********/
+  .popup-layer .popup-body {
+    width: 80%;
+    max-width: unset;
+  }
+}
+
+@media (max-width: 950px) {
+  .sub-view .support-sec2 ul .git-1 .cap-wrap {
+    font-size: 15px;
+  }
+  .sub-view .support-sec2 ul .git-1 .big-txt {
+    font-size: 25px;
+  }
+  .sub-view .support-sec2 ul .git-1 .f-item > div {
+    padding: 0.9rem 0;
+  }
+  .sub-view .support-sec2 ul .git-1 .form-wrap input {
+    font-size: 15px;
+    padding: 0.5rem;
+  }
+  .sub-view .support-sec2 ul .git-1 .form-wrap span {
+    font-size: 16px;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .f-item:nth-of-type(1) {
+    width: 26%;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .f-item:nth-of-type(2) {
+    width: 74%;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .form-wrap {
+    gap: 8px;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .form-wrap button {
+    padding: 0.45rem;
+  }
+
+  .sub-view .support-sec2 ul .git-2,
+  .sub-view .support-sec2 ul .git-3 {
+    padding: 2.1rem;
+    min-height: 300px;
+  }
+
+  .sub-view .support-sec2 ul .git-2 .tw-1 h3 {
+    font-size: 42px;
+  }
+
+  .sub-view .support-sec2 ul .git-3 .tw-1 h3 {
+    font-size: 32px;
+  }
+
+  .sub-view .support-sec2 ul .git-3 > a {
+    padding: 0.5rem 1.7rem;
+    font-size: 18px;
+  }
+
+  .sub-view .support-sec2 ul .git-3 .obj {
+    top: 2.1rem;
+    right: 2.1rem;
+  }
+
+  .sub-view .support-sec2 ul .git-2 .tw-3 .time em,
+  .sub-view .support-sec2 ul .git-3 .tw-3 .time em {
+    font-size: 16px;
+  }
+
+  .sub-view .support-sec2 ul .git-2 .tw-2 .time,
+  .sub-view .support-sec2 ul .git-3 .tw-2 .time {
+    font-size: 20px;
+  }
+
+  .sub-view .support-sec2 ul .git-2 .tw-2 .day,
+  .sub-view .support-sec2 ul .git-3 .tw-2 .day {
+    font-size: 14px;
+  }
+
+  .sub-view .support-sec2 ul .git-3 .obj img {
+    width: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sub-view .support-sec2 ul .git-1 {
+    padding: 3.5rem;
+  }
+  .sub-view .support-sec2 ul .git-1 .flex {
+    flex-direction: column;
+  }
+  .sub-view .support-sec2 ul .git-1 .mo-none {
+    display: none;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .pc-none {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 7vw;
+    padding-bottom: 1rem;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .img img {
+    display: block;
+    width: 130px;
+  }
+
+  .sub-view .support-sec2 .git-1 .f-item {
+    width: 100%;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .pc-none .txt h3 {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.4;
+    color: #31312d;
+    padding-bottom: 1.5rem;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .pc-none .txt p {
+    font-size: 16px;
+    color: #31312d;
+    line-height: 1.5;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .form-wrap input {
+    padding: 0.7rem;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .form-wrap button {
+    padding: 0.667rem;
+    height: auto;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .form-wrap .form-item:nth-of-type(2) {
+    width: 42%;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .form-wrap .form-item:nth-of-type(3) {
+    width: 25%;
+  }
+
+  .sub-view .support-sec2 ul .git-2 .tw-1 h3 span {
+    display: none;
+  }
+
+  .sub-view .support-sec2 ul .git-2 .tw-1 h3 br {
+    display: block;
+  }
+
+  .sub-view .support-sec2 ul .git-2 .tw-1 h3 {
+    font-size: 50px;
+  }
+
+  .sub-view .support-sec2 ul .git-2,
+  .sub-view .support-sec2 ul .git-3 {
+    min-height: 380px;
+    padding: 2.8rem;
+  }
+
+  .sub-view .support-sec2 ul .git-2 .tw-1 p {
+    font-size: 20px;
+  }
+
+  /*************팝업레이어**************/
+  .popup-layer .popup-body {
+    width: 90vw;
+    padding: 3rem 1.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .sub-view .support-sec1 .tit-wrap h2 {
+    padding: 1rem 0 1.1rem;
+  }
+  .sub-view .support-sec2 ul {
+    grid-template-columns: 1fr; /* 1개 열만 사용 (전체 너비) */
+    grid-template-rows: repeat(3, auto); /* 총 3줄(3행) 생성 */
+    gap: 15px;
+  }
+
+  .sub-view .support-sec2 ul .grid-item {
+    grid-column: 1 / -1; /* 가로 전체 채우기 */
+  }
+  /* 모바일 세로 배치 순서 지정 (1 -> 3 -> 2) */
+  .sub-view .support-sec2 ul .git-1 {
+    grid-row: 1; /* 첫 번째 줄 */
+  }
+
+  .sub-view .support-sec2 ul .git-3 {
+    grid-row: 2; /* 두 번째 줄 */
+  }
+
+  .sub-view .support-sec2 ul .git-2 {
+    grid-row: 3; /* 세 번째 줄 */
+  }
+
+  .sub-view .support-sec2 ul .git-1 {
+    padding: 2rem;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .form-wrap .form-item {
+    width: 100% !important;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .form-wrap {
+    gap: 18px;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .img img {
+    width: 60px;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .pc-none .txt h3 {
+    font-size: 24px;
+    padding-bottom: 0.7rem;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .pc-none {
+    gap: 4vw;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .flex {
+    gap: 0;
+  }
+
+  .sub-view .support-sec2 ul .git-2,
+  .sub-view .support-sec2 ul .git-3 {
+    min-height: 340px;
+    padding: 2.3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .sub-view .support-sec2 ul .git-1 {
+    padding: 1.6rem;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .pc-none .txt h3 {
+    font-size: 22px;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .pc-none h3 br {
+    display: none;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .form-wrap input {
+    padding: 0.5rem;
+  }
+
+  .sub-view .support-sec2 ul .git-1 .form-wrap .privacy-wrap {
+    align-items: baseline;
+  }
+}

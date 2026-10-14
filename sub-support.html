@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마더365 고객지원</title>
+    <link rel="stylesheet" href="/sub-style.css" />
+
+    <!-- 폰트 -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"
+    />
+  </head>
+  <body>
+    <div class="sub-view">
+      <section class="support-sec1">
+        <div class="sub-container">
+          <div class="tit-wrap">
+            <em>CONTACT US</em>
+            <h2>필요한 순간, 편하게 문의해주세요</h2>
+            <p>원하시는 방법으로 빠르고 편리하게 상담받으실 수 있습니다.</p>
+          </div>
+        </div>
+      </section>
+      <section class="support-sec2">
+        <div class="sub-container">
+          <ul>
+            <li class="grid-item git-1">
+              <div class="flex">
+                <div class="f-item mo-none">
+                  <div class="img-wrap">
+                    <img src="/image/sub-support-img1.png" alt="" />
+                  </div>
+                  <div class="cap-wrap">
+                    <b>간단한 정보</b>만 남겨주시면 <br />
+                    확인 후 담당자가 <b>전화드립니다</b>
+                  </div>
+                </div>
+                <div class="pc-none">
+                  <div class="img">
+                    <img src="/image/sub-support-img1.png" alt="" />
+                  </div>
+                  <div class="txt">
+                    <h3>
+                      전화로 궁금한 사항을 <br />
+                      친절하게 상담해드립니다.
+                    </h3>
+                    <p>
+                      <b>간단한 정보</b>만 남겨주시면 확인 후 담당자가
+                      전화드립니다
+                    </p>
+                  </div>
+                </div>
+                <div class="f-item">
+                  <div class="big-txt mo-none">
+                    전화로 궁금한 사항을 친절하게 상담해드립니다.
+                  </div>
+                  <div class="form-wrap">
+                    <div class="form-item">
+                      <span>이름<sup>*</sup><em>필수</em></span>
+                      <input type="text" placeholder="이름을 입력해주세요" />
+                    </div>
+                    <div class="form-item">
+                      <span>전화번호<sup>*</sup><em>필수</em></span>
+                      <input type="text" placeholder="번호를 입력해주세요" />
+                    </div>
+                    <div class="form-item">
+                      <button type="submit">상담요청하기</button>
+                    </div>
+                    <div class="privacy-wrap">
+                      <input type="checkbox" name="" id="" />
+                      <a href="">개인정보 수집 및 이용에 동의합니다. (필수)</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="grid-item git-2">
+              <div class="txt-wrap tw-1">
+                <p>전화상담</p>
+                <h3>1670<span>-</span><br />3658</h3>
+              </div>
+              <div class="gap"></div>
+              <div class="txt-wrap tw-2">
+                <div class="time"><em>평일</em>10:00-05:30</div>
+                <div class="day">토/일요일, 공휴일 휴무</div>
+              </div>
+              <div class="obj">
+                <img src="/image/sub-support-img2.png" alt="" />
+              </div>
+            </li>
+            <li class="grid-item git-3">
+              <div class="txt-wrap tw-1">
+                <h3>카카오톡으로<br />상담하기</h3>
+              </div>
+              <a href=""
+                ><img src="/image/sub-support-kko.png" alt="" /> 상담요청하기</a
+              >
+              <div class="txt-wrap tw-2">
+                <div class="time"><em>평일</em>10:00-05:30</div>
+                <div class="day">토/일요일, 공휴일 휴무</div>
+              </div>
+              <div class="obj">
+                <img src="/image/sub-support-img3.png" alt="" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- privacy popup 
+      <div class="popup-layer">
+        <div class="popup-body">
+          <div class="close">닫기</div>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non harum
+          nobis iste magnam quis nesciunt. Blanditiis, fugit impedit a nisi
+          tempora expedita iste minima in explicabo repellat error sequi
+          doloribus.
+        </div>
+      </div>
+      -->
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const privacyLink = document.querySelector(".privacy-wrap a");
+        const popupLayer = document.querySelector(".popup-layer");
+        const closeBtn = document.querySelector(".popup-layer .close");
+
+        const openPopup = () => {
+          popupLayer.classList.add("is-open");
+          document.body.classList.add("scroll-lock");
+        };
+
+        const closePopup = () => {
+          popupLayer.classList.remove("is-open");
+          document.body.classList.remove("scroll-lock");
+        };
+
+        privacyLink.addEventListener("click", (e) => {
+          e.preventDefault();
+          openPopup();
+        });
+
+        closeBtn.addEventListener("click", closePopup);
+
+        popupLayer.addEventListener("click", (e) => {
+          if (e.target === popupLayer) {
+            closePopup();
+          }
+        });
+
+        window.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && popupLayer.classList.contains("is-open")) {
+            closePopup();
+          }
+        });
+      });
+
+      /* 전화 상담 배너 모바일에서만 전화 연결 버튼 기능 
+      document.addEventListener("DOMContentLoaded", function () {
+        const git2Banner = document.querySelector(".git-2");
+
+        if (git2Banner) {
+          git2Banner.addEventListener("click", function () {
+            // 화면 폭이 768px 이하인 모바일 환경일 때만 전화 걸기 실행
+            if (window.innerWidth <= 768) {
+              window.location.href = "tel:16703658";
+            }
+          });
+        }
+      });
+      */
+    </script>
+  </body>
+</html>
