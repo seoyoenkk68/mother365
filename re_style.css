@@ -2144,6 +2144,10 @@ body {
   .main-family .title-wrap p {
     font-size: 16px;
   }
+
+  .main-family .title-wrap p br {
+    display: none;
+  }
   .main-family ul li {
     padding: 3rem 1.8rem;
     border-radius: 20px;
@@ -2176,10 +2180,6 @@ body {
 
   .main-family .title-wrap h2 {
     font-size: 34px;
-  }
-
-  .main-family .title-wrap p br {
-    display: none;
   }
 
   .main-family .family-btn {
