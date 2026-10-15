@@ -2344,7 +2344,7 @@ body {
 
 @media (max-width: 700px) {
   .main-companion {
-    padding-top: 90px;
+    padding-top: 80px;
   }
   .main-companion .title-wrap h2 {
     font-size: 40px;
