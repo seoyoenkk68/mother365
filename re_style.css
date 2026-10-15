@@ -2492,7 +2492,7 @@ body {
   }
 
   .main-partner .title-wrap h2 {
-    font-size: 38px;
+    font-size: 28px;
     padding: 16px 0 20px;
   }
 
@@ -2502,15 +2502,11 @@ body {
 
   .main-partner .mq-wrap .hide-area {
     width: 100px;
-    height: 160px;
+    height: 140px;
   }
 }
 
 @media (max-width: 550px) {
-  .main-partner .title-wrap h2 {
-    font-size: 32px;
-  }
-
   .main-partner .mq-wrap .track {
     padding: 8px 0;
     gap: 16px;
@@ -2523,22 +2519,12 @@ body {
 }
 
 @media (max-width: 376px) {
-  .main-partner .title-wrap h2 {
-    font-size: 28px;
-  }
-
   .main-partner .title-wrap h2 br {
     display: none;
   }
 
   .main-partner .mq-wrap .track .item {
     width: 120px;
-  }
-
-  .main-partner .mq-wrap .hide-area {
-    width: 100px;
-    height: 180px;
-    border: 1px solid red;
   }
 }
 
