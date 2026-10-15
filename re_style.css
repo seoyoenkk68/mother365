@@ -2141,8 +2141,9 @@ body {
     padding-bottom: 50px;
   }
   .main-family .title-wrap h2 {
-    font-size: 40px;
+    font-size: 34px;
     padding: 16px 0 20px;
+    line-height: 1.5;
   }
   .main-family .title-wrap p {
     font-size: 16px;
@@ -2179,10 +2180,6 @@ body {
 
   .main-family .title-wrap {
     padding-bottom: 40px;
-  }
-
-  .main-family .title-wrap h2 {
-    font-size: 34px;
   }
 
   .main-family .family-btn {
@@ -2350,8 +2347,9 @@ body {
     padding-top: 80px;
   }
   .main-companion .title-wrap h2 {
-    font-size: 40px;
+    font-size: 35px;
     padding: 16px 0 20px;
+    line-height: 1.5;
   }
   .main-companion .title-wrap p {
     font-size: 16px;
@@ -2370,11 +2368,6 @@ body {
   }
   .main-companion .title-wrap {
     padding-bottom: 40px;
-  }
-
-  .main-companion .title-wrap h2 {
-    font-size: 35px;
-    line-height: 1.5;
   }
 
   .main-companion .companion-btn {
