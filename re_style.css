@@ -2416,6 +2416,9 @@ body {
 }
 
 @media (max-width: 700px) {
+  .main-widebn {
+    margin-top: 150px;
+  }
   .main-widebn .wide-bn-swiper .swiper-slide .caption {
     text-align: center;
     width: 80%;
@@ -2431,9 +2434,6 @@ body {
 }
 
 @media (max-width: 376px) {
-  .main-widebn {
-    margin-top: 130px;
-  }
   .main-widebn .wide-bn-swiper .swiper-slide .caption {
     width: 85%;
   }
@@ -2445,6 +2445,90 @@ body {
 /* ***************************와이드 배너 섹션 end********************************* */
 
 /* ***************************파트너 섹션 ********************************* */
+
+@media (max-width: 1200px) {
+  .main_view .main-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .main-partner .title-wrap em {
+    font-size: 16px;
+  }
+  .main-partner .title-wrap h2 {
+    font-size: 42px;
+  }
+
+  .main-partner .mq-wrap {
+    padding-top: 2.3rem;
+  }
+
+  .main-partner .mq-wrap .hide-area {
+    width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-partner .mq-wrap .track .item {
+    width: 180px;
+    height: 50px;
+  }
+  .main-partner .mq-wrap {
+    gap: 0;
+  }
+
+  .main-partner .logo-bg {
+    top: 15%;
+  }
+
+  .main-partner .logo-bg img {
+    width: 230px;
+  }
+
+  .main-partner .mq-wrap .hide-area {
+    width: 300px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-partner {
+    padding: 9rem 0 8rem;
+  }
+
+  .main-partner .title-wrap h2 {
+    font-size: 38px;
+    padding: 16px 0 20px;
+  }
+
+  .main-partner .mq-wrap {
+    padding-top: 1.2rem;
+  }
+
+  .main-partner .mq-wrap .hide-area {
+    width: 200px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 550px) {
+  .main-partner .title-wrap h2 {
+    font-size: 32px;
+  }
+
+  .main-partner .logo-bg img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 376px) {
+  .main-partner .title-wrap h2 {
+    font-size: 28px;
+  }
+
+  .main-partner .title-wrap h2 br {
+    display: none;
+  }
+}
 
 /* ***************************파트너 섹션 end********************************* */
 
