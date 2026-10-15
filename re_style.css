@@ -2154,8 +2154,9 @@ body {
 
 @media (max-width: 376px) {
   .main-family {
-    padding-top: 150px;
+    padding-top: 100px;
   }
+
   .main-family ul li .txt-wrap {
     font-size: 18px;
     line-height: 1.6;
@@ -2176,6 +2177,10 @@ body {
 
   .main-family .title-wrap h2 {
     font-size: 34px;
+  }
+
+  .main-family .title-wrap p br {
+    display: none;
   }
 
   .main-family .family-btn {
@@ -2237,10 +2242,6 @@ body {
 @media (max-width: 376px) {
   .main-marquee {
     padding: 5.8rem 0 0;
-  }
-
-  .main-family .title-wrap p br {
-    display: none;
   }
 }
 /* ***************************마퀴 섹션 end********************************* */
