@@ -2628,9 +2628,96 @@ body {
   .main-form .form-box button img {
     width: 25px;
   }
+
+  .main-form .bank-info {
+    font-size: 14px;
+    bottom: 11px;
+  }
+
+  .main-form .bank-info b span {
+    font-size: 20px;
+  }
+  .main-form .bank-info b {
+    padding-left: 10px;
+  }
+  .main-form .bank-info b span {
+    padding: 0 4px;
+  }
 }
 
 /* ***************************폼 섹션 end********************************* */
+
+/* ***************************하프 배너 섹션 end********************************* */
+@media (max-width: 1570px) {
+  .main-half-bn ul li a {
+    height: 150px;
+  }
+  .main-half-bn ul li a .caption {
+    padding: 2rem;
+  }
+  .main-half-bn ul li a .caption .right {
+    padding: 0.6rem 1.4rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .main-half-bn ul li a .caption .right {
+    padding: 0.4rem 1rem;
+  }
+  .main-half-bn ul li a .caption .right {
+    flex-shrink: 0;
+  }
+  .main-half-bn ul li a .caption p {
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-half-bn ul li a .caption .subj {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 990px) {
+  .main-half-bn ul li a {
+    height: 180px;
+  }
+  .main-half-bn ul li a .caption {
+    padding: 1.2rem;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-half-bn ul {
+    flex-direction: column;
+  }
+  .main-half-bn ul li {
+    width: 100%;
+  }
+
+  .main-half-bn ul li a {
+    height: fit-content;
+  }
+
+  .main-half-bn ul li a .caption {
+    padding: 1.8rem;
+  }
+
+  .main-half-bn ul li a .caption .subj {
+    font-size: 20px;
+  }
+
+  .main-half-bn ul li img {
+    aspect-ratio: 4/1.8;
+  }
+
+  .main-half-bn ul li a .caption .right {
+    padding: 0.6rem 1.6rem;
+  }
+}
+/* ***************************하프 배너 섹션 ********************************* */
 
 .fixed-bank,
 .main-fixed-quick {
