@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "kimm";
-  src: url("/fonts/KIMM_bold.woff") format("woff");
+  src: url("./fonts/KIMM_bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -2128,6 +2128,9 @@ body {
 }
 
 @media (max-width: 700px) {
+  .main-family {
+    padding-top: 100px;
+  }
   .main-family ul li {
     width: 100%;
   }
@@ -2153,10 +2156,6 @@ body {
 }
 
 @media (max-width: 376px) {
-  .main-family {
-    padding-top: 100px;
-  }
-
   .main-family ul li .txt-wrap {
     font-size: 18px;
     line-height: 1.6;
@@ -2344,6 +2343,9 @@ body {
 }
 
 @media (max-width: 700px) {
+  .main-companion {
+    padding-top: 90px;
+  }
   .main-companion .title-wrap h2 {
     font-size: 40px;
     padding: 16px 0 20px;
@@ -2360,10 +2362,6 @@ body {
 }
 
 @media (max-width: 376px) {
-  .main-companion {
-    padding-top: 90px;
-  }
-
   .main-widebn .wide-bn-swiper .swiper-slide {
     height: 400px;
   }
