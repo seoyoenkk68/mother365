@@ -1552,6 +1552,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  background-position: 50% 100%;
 }
 
 .main-form .bottom-box h3 {
@@ -1796,6 +1797,7 @@ body {
   }
   .main-hero .hero-txt h2 {
     font-size: 36px;
+    line-height: 1.6;
   }
 }
 
@@ -2484,7 +2486,7 @@ body {
 
 @media (max-width: 700px) {
   .main-partner {
-    padding: 9rem 0 8rem;
+    padding: 9rem 0 5rem;
   }
 
   .main-partner .title-wrap h2 {
@@ -2525,6 +2527,76 @@ body {
 }
 
 /* ***************************파트너 섹션 end********************************* */
+
+/* ***************************폼 섹션 ********************************* */
+@media (max-width: 1200px) {
+  .main-form .center-obj {
+    width: 200px;
+  }
+  .main-form .bottom-box {
+    padding: 1rem 0 9rem;
+  }
+  .main-form .bottom-box h3 {
+    font-size: 38px;
+  }
+
+  .main-form .form-box {
+    width: 650px;
+    padding: 0.8rem 4rem;
+  }
+
+  .main-form .form-box input {
+    font-size: 16px;
+  }
+
+  .main-form .form-box button img {
+    display: block;
+    width: 40px;
+  }
+  .main-form .form-box span {
+    font-size: 16px;
+  }
+
+  .main-form .privacy-wrap a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-form .form-box {
+    width: 590px;
+    padding: 0.8rem 2.7rem;
+    gap: 0;
+  }
+
+  .main-form .bank-info {
+    width: 100%;
+    text-align: center;
+  }
+  .main-form .bottom-box {
+    padding: 3rem 0 8rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-form .main-container {
+    padding: 0 15px;
+  }
+
+  .main-form .center-obj {
+    width: 150px;
+    top: 12%;
+  }
+  .main-form .bottom-box h3 {
+    padding-bottom: 2rem;
+    font-size: 32px;
+  }
+  .main-form .form-box {
+    width: 100%;
+  }
+}
+
+/* ***************************폼 섹션 end********************************* */
 
 .fixed-bank,
 .main-fixed-quick {
