@@ -2699,22 +2699,30 @@ body {
 
   .main-half-bn ul li a {
     height: fit-content;
+    aspect-ratio: unset;
   }
 
   .main-half-bn ul li a .caption {
-    padding: 1.8rem;
+    padding: 30px;
+    position: relative;
+    gap: 30px;
   }
 
   .main-half-bn ul li a .caption .subj {
     font-size: 20px;
   }
 
-  .main-half-bn ul li img {
-    aspect-ratio: 4/1.8;
-  }
-
   .main-half-bn ul li a .caption .right {
     padding: 0.6rem 1.6rem;
+  }
+
+  .main-half-bn ul li img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
   }
 }
 /* ***************************하프 배너 섹션 ********************************* */
