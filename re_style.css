@@ -157,6 +157,9 @@ body {
 
 /***********퀵s*************/
 
+/* ========================================
+   고정 퀵 버튼
+======================================== */
 .main-fixed-quick {
   position: fixed;
   z-index: 9999;
@@ -171,24 +174,40 @@ body {
   justify-content: center;
   align-items: center;
   animation: swoosh-float 3.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
-  transition: 1s;
-
+  transition: background 0.3s;
   backdrop-filter: blur(10px);
 }
 
 .main-fixed-quick:hover {
-  bottom: 30px;
   background: #ffc7c7;
-  transition: 1s;
 }
 
+/* 퀵 버튼 링크 */
+.main-fixed-quick .quick-toggle {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 중앙 오브젝트 */
+.main-fixed-quick .quick-toggle > img {
+  display: block;
+  width: 65%;
+  margin: 0 auto;
+}
+
+/* 회전 오브젝트 */
 .main-fixed-quick .rotate-obj {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  border: 1px soild red;
+  pointer-events: none;
 }
 
 .main-fixed-quick .rotate-obj img {
@@ -196,14 +215,148 @@ body {
   animation: spin-loop 20s linear infinite;
 }
 
-.main-fixed-quick a {
-  display: block;
+/* ========================================
+   상담 폼 말풍선
+======================================== */
+.main-fixed-quick .quick-mini-form {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 18px);
+  width: 290px;
+  box-sizing: border-box;
+  padding: 26px 22px 22px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.14);
+  z-index: 10;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform: translateY(15px) scale(0.92);
+  transform-origin: bottom right;
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.35s cubic-bezier(0.2, 1.4, 0.4, 1),
+    visibility 0.25s;
 }
 
-.main-fixed-quick a > img {
+/* 말풍선 꼬리 */
+.main-fixed-quick .quick-mini-form::after {
+  content: "";
+  position: absolute;
+  right: 23px;
+  bottom: -9px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  transform: rotate(45deg);
+  border-radius: 3px;
+}
+
+/* 폼 열림 */
+.main-fixed-quick.form-open .quick-mini-form {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+/* 상단 라벨 */
+.quick-mini-label {
   display: block;
-  width: 65%;
-  margin: 0 auto;
+  margin-bottom: 9px;
+  color: #e3743b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+/* 타이틀 */
+.quick-mini-form h3 {
+  margin: 0 0 8px;
+  color: #222;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+/* 설명 */
+.quick-mini-form p {
+  margin: 0 0 18px;
+  color: #888;
+  font-size: 12px;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+/* 닫기 버튼 */
+.quick-mini-close {
+  position: absolute;
+  top: 10px;
+  right: 13px;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #999;
+  font-size: 23px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* 폼 영역 */
+.quick-mini-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 입력창 */
+.quick-mini-form form input {
+  width: 100%;
+  height: 44px;
+  box-sizing: border-box;
+  padding: 0 13px;
+  border: 1px solid #e8e8e8;
+  border-radius: 9px;
+  outline: none;
+  background: #fafafa;
+  color: #222;
+  font-size: 13px;
+  transition: border-color 0.2s;
+}
+
+.quick-mini-form form input:focus {
+  border-color: #e3743b;
+  background: #fff;
+}
+
+.quick-mini-form form input::placeholder {
+  color: #aaa;
+}
+
+/* 상담 신청 버튼 */
+.quick-mini-form form > button {
+  width: 100%;
+  height: 46px;
+  margin-top: 3px;
+  border: 0;
+  border-radius: 9px;
+  background: #e3743b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.quick-mini-form form > button:hover {
+  background: #cf602b;
 }
 
 .fixed-bank {
@@ -218,7 +371,7 @@ body {
   border: 1px solid #fff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   opacity: 0.7;
-  z-index: 4;
+  z-index: 9999;
 }
 
 .fixed-bank * {
@@ -2731,7 +2884,100 @@ body {
 }
 /* ***************************하프 배너 섹션 ********************************* */
 
-.fixed-bank,
-.main-fixed-quick {
-  display: none;
+/* ========================================
+   모바일
+======================================== */
+@media (max-width: 767px) {
+  .main-fixed-quick {
+    right: 15px;
+    bottom: 15px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .main-fixed-quick .quick-mini-form {
+    width: min(290px, calc(100vw - 30px));
+    padding: 24px 20px 20px;
+  }
+
+  .quick-mini-form h3 {
+    font-size: 18px;
+  }
+
+  .main-fixed-quick .rotate-obj {
+    display: none;
+  }
+}
+
+/* ========================================
+   입금 안내 반응형
+======================================== */
+@media (max-width: 1024px) {
+  .fixed-bank {
+    padding: 0.8rem;
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .fixed-bank .num {
+    font-size: 13px;
+  }
+
+  .fixed-bank .num b {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .fixed-bank {
+    left: 10px;
+    bottom: 10px;
+    max-width: calc(100vw - 100px);
+    box-sizing: border-box;
+    padding: 0.65rem 0.75rem;
+    border-radius: 0 8px 8px 8px;
+  }
+
+  .fixed-bank .subj {
+    font-size: 12px;
+    padding-bottom: 4px;
+  }
+
+  .fixed-bank .num {
+    font-size: 11px;
+    line-height: 1.4;
+    word-break: keep-all;
+  }
+
+  .fixed-bank .num b {
+    font-size: 14px;
+    letter-spacing: -0.03rem;
+  }
+
+  .fixed-bank::after {
+    font-size: 10px;
+    padding: 0.25rem 0.7rem;
+    border-radius: 6px 6px 0 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .fixed-bank {
+    left: 8px;
+    bottom: 8px;
+    max-width: calc(100vw - 90px);
+    padding: 0.55rem 0.6rem;
+  }
+
+  .fixed-bank .num {
+    font-size: 10px;
+  }
+
+  .fixed-bank .num b {
+    font-size: 12px;
+  }
+
+  .fixed-bank::after {
+    font-size: 9px;
+  }
 }

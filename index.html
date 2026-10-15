@@ -52,15 +52,115 @@
       </div>
     </div>-->
     <div class="main_view">
+      <!-- 고정상담퀵 -->
+
       <!-- 고정 퀵 -->
       <div class="main-fixed-quick">
-        <a href="">
+        <!-- 상담 폼 -->
+        <div class="quick-mini-form">
+          <button type="button" class="quick-mini-close" aria-label="닫기">
+            &times;
+          </button>
+
+          <span class="quick-mini-label">MOTHER365</span>
+          <h3>상담이 필요하신가요?</h3>
+          <p>연락처를 남겨주시면 연락드릴게요.</p>
+
+          <form id="quickForm">
+            <input type="text" name="name" placeholder="이름" required />
+
+            <input
+              type="tel"
+              name="phone"
+              placeholder="전화번호"
+              maxlength="13"
+              inputmode="tel"
+              required
+            />
+
+            <button type="submit">상담 신청하기</button>
+          </form>
+        </div>
+
+        <!-- 기존 퀵 버튼 -->
+        <a href="#" class="quick-toggle" aria-label="상담 신청 열기">
           <img src="./image/quick-obj.png" alt="" />
           <div class="rotate-obj">
             <img src="./image/quick-ratate.png" alt="" />
           </div>
         </a>
       </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const quick = document.querySelector(".main-fixed-quick");
+          const toggle = quick?.querySelector(".quick-toggle");
+          const close = quick?.querySelector(".quick-mini-close");
+          const form = quick?.querySelector("#quickForm");
+          const phone = form?.querySelector('[name="phone"]');
+
+          if (!quick || !toggle) return;
+
+          // ========================================
+          // 1. 퀵 버튼 클릭 → 폼 열기/닫기
+          // ========================================
+          toggle.addEventListener("click", function (e) {
+            e.preventDefault();
+            quick.classList.toggle("form-open");
+          });
+
+          // ========================================
+          // 2. 닫기 버튼
+          // ========================================
+          close?.addEventListener("click", function () {
+            quick.classList.remove("form-open");
+          });
+
+          // ========================================
+          // 3. 전화번호 자동 하이픈
+          // ========================================
+          phone?.addEventListener("input", function () {
+            const number = this.value.replace(/\D/g, "").slice(0, 11);
+
+            if (number.length <= 3) {
+              this.value = number;
+            } else if (number.length <= 7) {
+              this.value = number.replace(/(\d{3})(\d+)/, "$1-$2");
+            } else {
+              this.value = number.replace(/(\d{3})(\d{4})(\d+)/, "$1-$2-$3");
+            }
+          });
+
+          // ========================================
+          // 4. 상담 신청 폼 제출
+          // ========================================
+          form?.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const name = form.elements.name.value.trim();
+            const digits = phone.value.replace(/\D/g, "");
+
+            if (!name) {
+              alert("이름을 입력해 주세요.");
+              form.elements.name.focus();
+              return;
+            }
+
+            if (digits.length < 10 || digits.length > 11) {
+              alert("올바른 전화번호를 입력해 주세요.");
+              phone.focus();
+              return;
+            }
+
+            alert(
+              name +
+                "님, 입력이 완료되었습니다.\n" +
+                "실제 상담 접수 기능은 별도 연동이 필요합니다.",
+            );
+          });
+        });
+      </script>
+
+      <!-- 고정상담퀵 end-->
       <!-- 고정 계좌정보 -->
       <div class="fixed-bank">
         <!--<div class="subj">입금안내</div>-->
