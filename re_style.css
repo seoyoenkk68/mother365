@@ -1266,7 +1266,7 @@ body {
   width: 100%;
   background:
     linear-gradient(84deg, #000000ba, #0000002b),
-    url(/image/main-section3-img1.jpg);
+    url(image/main-section3-img1.jpg);
   background-size: cover;
   border-radius: 45px;
   padding: 4.4rem;
@@ -1449,7 +1449,7 @@ body {
 }
 
 .main-widebn .wide-bn-swiper .swiper-slide.ss1 {
-  background: url(/image/main-wide-bn-1.jpg);
+  background: url(image/main-wide-bn-1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1546,7 +1546,7 @@ body {
 
 .main-form .bottom-box {
   background:
-    url(/image/main-section5-img3.png), linear-gradient(#ea814c, #d54249);
+    url(image/main-section5-img3.png), linear-gradient(#ea814c, #d54249);
   padding: 3.5rem 0 12rem;
   background-size: contain;
   background-position: center;
