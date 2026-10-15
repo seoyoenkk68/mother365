@@ -2149,6 +2149,10 @@ body {
     border-radius: 20px;
   }
 
+  .main-family ul li .box-obj {
+    width: 90px;
+    opacity: 0.5;
+  }
   .main-family ul li .step {
     left: 1.8rem;
     width: 35px;
@@ -2159,10 +2163,6 @@ body {
   .main-family ul li .txt-wrap {
     font-size: 18px;
     line-height: 1.6;
-  }
-  .main-family ul li .box-obj {
-    width: 90px;
-    opacity: 0.5;
   }
 
   .main-family ul li .step {
