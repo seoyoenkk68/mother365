@@ -2593,7 +2593,40 @@ body {
   }
   .main-form .form-box {
     width: 100%;
-    padding: 0.8rem 1.5rem;
+    padding: 0;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: unset;
+    box-shadow: unset;
+    gap: 10px;
+  }
+
+  .main-form .form-box input {
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .main-form .form-box .input1,
+  .main-form .form-box .input2 {
+    width: 100%;
+  }
+
+  .main-form .form-box .input1::after {
+    display: none;
+  }
+
+  .main-form .form-box button {
+    background: linear-gradient(218deg, #f9f9f9, #e9dfdf);
+    padding: 0.6rem;
+    border-radius: 15px;
+    border: 1px solid #dbdbdb;
+    margin-top: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  .main-form .form-box button img {
+    width: 25px;
   }
 }
 
