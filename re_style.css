@@ -1925,8 +1925,8 @@ body {
 
 @media (max-width: 1200px) {
   .main_view .main-contact {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .main-contact {
@@ -2046,11 +2046,14 @@ body {
     width: 100%;
     aspect-ratio: unset;
   }
+
+  .main-contact .contact-wrap li.call .num {
+    font-size: 42px;
+  }
 }
 
 @media (max-width: 376px) {
   .main-contact .contact-wrap li.call .num {
-    font-size: 50px;
     line-height: 0.7;
     margin-top: 25px;
     margin-bottom: 35px;
@@ -2061,8 +2064,8 @@ body {
 /* ***************************가족간병 섹션********************************* */
 @media (max-width: 1200px) {
   .main_view .main-family {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .main-family .title-wrap {
@@ -2248,8 +2251,8 @@ body {
 /* ***************************동행 섹션********************************* */
 @media (max-width: 1200px) {
   .main-companion .main-container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .main-companion .title-wrap em {
     font-size: 16px;
@@ -2447,9 +2450,9 @@ body {
 /* ***************************파트너 섹션 ********************************* */
 
 @media (max-width: 1200px) {
-  .main_view .main-container {
-    padding-left: 15px;
-    padding-right: 15px;
+  .main_view .title-wrap {
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .main-partner .title-wrap em {
     font-size: 16px;
