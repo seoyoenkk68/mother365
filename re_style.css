@@ -1608,6 +1608,20 @@ body {
   background-repeat: no-repeat;
 }
 
+.main-widebn .wide-bn-swiper .swiper-slide.ss2 {
+  background: url(image/main-wide-bn-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-widebn .wide-bn-swiper .swiper-slide.ss3 {
+  background: url(image/main-wide-bn-3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .main-widebn .wide-bn-swiper .swiper-slide .caption {
   position: absolute;
   width: var(--max-width);
