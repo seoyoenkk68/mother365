@@ -1719,6 +1719,64 @@ body {
 
 /* 히어로 섹션 */
 
+@media (max-width: 1640px) {
+  .main-hero .obj-wrap {
+    height: 79vh;
+  }
+  .main-hero .obj-wrap .obj-1 {
+    width: 483px;
+  }
+  .main-hero .obj-wrap .obj-2 {
+    width: 483px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .main-hero .obj-wrap {
+    height: 69vh;
+  }
+  .main-hero .obj-wrap .obj-1 {
+    width: 383px;
+  }
+  .main-hero .obj-wrap .obj-2 {
+    width: 383px;
+  }
+
+  .main-hero .obj-3,
+  .main-hero .obj-4,
+  .main-hero .obj-5 {
+    width: 8%;
+  }
+
+  .main-hero .obj-5 {
+    right: 7%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .main-hero .hero-txt h2 b {
+    font-size: 70px;
+  }
+  .main-hero .hero-txt h2 {
+    font-size: 40px;
+  }
+
+  .main-hero .hero-txt p {
+    font-size: 18px;
+  }
+
+  .main-hero .hero-txt a {
+    padding: 28px 50px;
+    font-size: 18px;
+  }
+  .main-hero .hero-bg-txt {
+    font-size: 200px;
+    bottom: 100px;
+  }
+}
+
+/* 히어로 섹션 end */
+
 @media (max-width: 1200px) {
   .main-companion .content-wrap {
     gap: 20px;
