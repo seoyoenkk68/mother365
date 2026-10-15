@@ -2350,12 +2350,12 @@ body {
   .main-companion .title-wrap p {
     font-size: 16px;
   }
-}
-
-@media (max-width: 500px) {
   .main-companion .title-wrap p br {
     display: none;
   }
+}
+
+@media (max-width: 500px) {
 }
 
 @media (max-width: 376px) {
