@@ -2589,10 +2589,11 @@ body {
   }
   .main-form .bottom-box h3 {
     padding-bottom: 2rem;
-    font-size: 32px;
+    font-size: 28px;
   }
   .main-form .form-box {
     width: 100%;
+    padding: 0.8rem 1.5rem;
   }
 }
 
